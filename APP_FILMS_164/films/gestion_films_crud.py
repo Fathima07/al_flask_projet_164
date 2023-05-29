@@ -89,14 +89,14 @@ def film_update_wtf():
             duree_film_update = form_update_film.duree_film_update_wtf.data
             description_film_update = form_update_film.description_film_update_wtf.data
             cover_link_film_update = form_update_film.cover_link_film_update_wtf.data
-            datesortie_film_update = form_update_film.datesortie_film_update_wtf.data
+
 
             valeur_update_dictionnaire = {"value_id_film": id_film_update,
                                           "value_nom_film": nom_film_update,
                                           "value_duree_film": duree_film_update,
                                           "value_description_film": description_film_update,
                                           "value_cover_link_film": cover_link_film_update,
-                                          "value_datesortie_film": datesortie_film_update
+
                                           }
             print("valeur_update_dictionnaire ", valeur_update_dictionnaire)
 
@@ -132,7 +132,7 @@ def film_update_wtf():
             print(f" duree film  ", data_film["product_desc"], "  type ", type(data_film["product_desc"]))
             form_update_film.description_film_update_wtf.data = data_film["product_price"]
             form_update_film.cover_link_film_update_wtf.data = data_film["product_image1"]
-            form_update_film.datesortie_film_update_wtf.data = data_film["date_sortie_film"]
+
 
     except Exception as Exception_film_update_wtf:
         raise ExceptionFilmUpdateWtf(f"fichier : {Path(__file__).name}  ;  "

@@ -47,8 +47,8 @@ class FormWTFUpdateFilm(FlaskForm):
 
     description_film_update_wtf = StringField("Description du film ", widget=TextArea())
     cover_link_film_update_wtf = StringField("Lien de l'affiche du film ", widget=TextArea())
-    datesortie_film_update_wtf = DateField("Date de sortie du film", validators=[InputRequired("Date obligatoire"),
-                                                                                 DataRequired("Date non valide")])
+    #datesortie_film_update_wtf = DateField("Date de sortie du film", validators=[InputRequired("Date obligatoire"),
+                                                                                # DataRequired("Date non valide")])
     submit = SubmitField("Update film")
 
 
