@@ -38,7 +38,7 @@ class ToolsBd:
                     "NOM_PRENOM_INFO1X_SUJET_164_2022.sql"
                     à la ligne de commande "USE NOM_PRENOM_INFO1X_SUJET_164_2021;"
         """
-        extract_nom_bd = ""
+        extract_nom_bd = "ALMAS_ABDULAZEEZ_INFO1A_SHOPPING_164_2023"
         try:
 
             if os.path.exists(NAME_FILE_DUMP_SQL_BD):

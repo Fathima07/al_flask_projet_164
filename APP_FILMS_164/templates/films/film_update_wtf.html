@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<p>
-				Editer un FILM
+				Editer un PRODUCT
 			</p>
 			<form action="" method="POST" novalidate>
 				<!-- Protection contre les attaques Cross-Site Request Forgery (CSRF) -->
@@ -39,13 +39,13 @@
 						<span style="color: red;">[{{ error }}]</span>
 						{% endfor %}
 					</p>
-					<!--<p>
+					<p>
 						{{ form_update_film.datesortie_film_update_wtf.label }}<br>
 						{{ form_update_film.datesortie_film_update_wtf(size=12) }}<br>
 						{% for error in form_update_film.datesortie_film_update_wtf.errors %}
 						<span style="color: red;">[{{ error }}]</span>
 						{% endfor %}
-					</p>-->
+					</p>
 				</div>
 				{{ form_update_film.submit(class="btn btn-primary") }}
 			</form>

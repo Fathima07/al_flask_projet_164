@@ -44,22 +44,22 @@
                     <thead>
                         <tr>
                             <th class="">
-                                id
+                                ID
                             </th>
                             <th class="">
-                                Titre
-                            </th>
-                            <th class="">
-                                Durée
-                            </th>
-                            <th class="">
-                                Date sortie
+                                Title
                             </th>
                             <th class="">
                                 Description
                             </th>
+                          <!--  <th class="">
+                                Date sortie
+                            </th>-->
                             <th class="">
-                                Affiche
+                                Price
+                            </th>
+                            <th class="">
+                                Image
                             </th>
                         </tr>
                     </thead>
@@ -84,7 +84,7 @@
 							{{ row.product_price|default("", True) }}
 						</td>
 						<td class="align-middle">
-                            <img class="img" src={{ row.product_image1|default(None, True) }} style="border: 0;display:block; width:150px; max-height:auto;" alt = "image masquée FFP67 (in COVID-29 Memory) (absente) mod 164">
+                            <img class="img" src={{ row.product_image1|default(None, True) }} style="border: 0;display:block; width:150px; max-height:auto;" alt = "image masquée FFP67 (in COVID-29 Memory) (absente) al 164">
 						</td>
 					</tr>
 				</tbody>
@@ -92,7 +92,7 @@
 				<tbody>
 					<tr>
 						<td>
-							Aucun film.
+							Aucun products.
 						</td>
 						<td>
 							<a class="btn btn-primary" href="{{ url_for('avertissement_sympa_pour_geeks') }}" role="button">Add</a>
