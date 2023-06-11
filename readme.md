@@ -28,15 +28,30 @@ Installer "GIT"
 
 # Guide pour faire fonctionner mon projet
 
-Démarrer le serveur MySql(Laragon(heidi.sql), uwamp ou xamp ou mamp, etc.)
+# Démarrer le serveur MySql(Laragon(heidi.sql), uwamp ou xamp ou mamp, etc.)
 
 ->Dans "PyCharm",importer Ma BD à partir du fichier DUMP
 ->Ouvrir le fichier APP_SHOP_164/database/1_ImportationDumpSql.py
 ->Cliquer avec le bouton droit sur l'onglet de ce fichier et choisir"run" (CTRL-MAJ-F10)
 
-En cas d'erreurs /!\
+# En cas d'erreurs /!\
 
 ->Ouvrir le fichier .env à la racine du projet, contrôler les indications de connexion pour la bd.
+
+# Test simple de la connexion à la BD
+
+-> Ouvrir le fichier APP_SHOP_164/database/2_test_connection_bd.py
+-> Cliquer avec le bouton droit sur l'onglet de ce fichier et choisir"run" (CTRL-MAJ-F10)
+
+# Démarrer le microframework FLASK
+
+-> Dans le répertoire racine du projet, ouvrir le fichier run_mon_app.py
+-> Cliquer avec le bouton droit sur l'onglet de ce fichier et choisir"run" (CTRL-MAJ-F10)
+-> Dans la console du "run" il doit y avoir un lien à cliquer de cette forme:
+     -> Running on http://127.0.0.1:5575
+-> Cliquer dessus afin d'ouvrir dans votre navigateur mon projet
+
+Vous voici sur le visuel de mon projet final!
 
 
 
